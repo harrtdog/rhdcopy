@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Knewave&family=Pixelify+Sans:wght@400..700&display=swap');
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;  /* Use full viewport height */
+            overflow: hidden;  /* Prevent scrolling */
+        }
+
+        /* Background image */
+        image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Freckle Face', cursive;
+            background-size: cover;
+            color: rgba(124, 0, 0, 0.952);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Menu container */
+        .menu-container {
+            position: absolute;
+            top: 75%;
+            right: 6%;
+            transform: translateY(-50%);
+            text-align: right;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: rgba(218, 218, 218, 0.87);
+            font-size: 30px;
+            transition: letter-spacing 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+            text-align: left;
+            font-weight: bold;
+            text-shadow: 5px 4px 5px #000000;
+            font-family: 'Pixelify Sans', cursive ;
+        }
+
+         /* Glow Animation for Menu Links */
+    @keyframes glow {
+      0% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgba(0, 255, 64, 0.616), 0 0 10px rgba(0, 255, 64, 0.616);
+      }
+      50% {
+        transform: scale(1.1);
+        text-shadow: 0 0 15px rgba(0, 255, 64, 0.616), 0 0 20px rgba(0, 255, 64, 0.616);
+      }
+      100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgba(0, 255, 64, 0.616), 0 0 10px rgba(0, 255, 64, 0.616);
+      }
+    }
+
+    .menu a:hover {
+      color: rgb(13, 226, 84);
+      animation: glow 1s ease-in-out infinite;
+    }
+
+ 
+  canvas {
+ 
+  border: 5px solid #000;
+  display: block; /* Ensures the canvas is a block element */
+  background-color: transparent;
+  }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background Image -->
+    <img src="/about.jpg" height="100%" width="100%" alt="Background Image">
+
+    <!-- Homepage Container -->
+    <div id="home-container">
+        <div class="menu-container">
+            <div class="menu">
+                <a href="gallery.html" id="gallery-btn">GALLERY</a>
+                <a href="tutorial.html" id="tutorials-btn">TUTORIALS</a>
+                <a href="start.html" id="home-btn">Exit</a>
+            </div>
+        </div>
+    </div>
+       
+    <canvas id="gameCanvas" width="500" height="200"></canvas>
+    
+    <script src="script.js"></script> 
+
+</body>
+</html>

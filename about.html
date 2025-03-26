@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Knewave&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: url('/about.jpg') no-repeat center center fixed; /* Add image URL */
+  background-size: cover; /* Ensure the image covers the whole screen */
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #000000;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+  color: #00ff55;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Active Link */
+nav a:active {
+  color: #0ada03;
+}
+
+/* Main Content */
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #48ff00, #5eff00); /* Gradient from blue to light green */
+  -webkit-background-clip: text; /* Ensures the gradient is applied to the text */
+  color: transparent; /* Make text color transparent so gradient shows */
+}
+
+/* About the Game Section */
+.about-game {
+  border: 3px solid #00ff2a; /* Blue border */
+  background-color: #000000; /* Solid blue background */
+  color: white; /* Text color inside the section */
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.about-game h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-game p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Game Features Section */
+.game-features {
+  border: 3px solid #00ff55; /* Light green border */
+  background-color: #000000; /* Solid light green background */
+  color: white; /* Text color inside the section */
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.game-features h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.game-features ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.game-features ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Character Description Section */
+.character-description {
+  border: 3px solid #15ff00; /* Yellow border */
+  background-color: #000000; /* Solid yellow background */
+  color: white; /* Text color inside the section */
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.character-description h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.character-description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Terms and Conditions Section */
+.terms {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 15px;
+  background-color: #000000;
+  color: white;
+  
+}
+
+.terms a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.terms a:hover {
+  color: #1cda03;
+}
+
+   </style>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="ramilo.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- About Content -->
+    <div class="container">
+        <h1>ABOUT</h1>
+        <h1>GALA SA PILIPINAS</h1>
+        
+        <!-- About the Game Section -->
+        <div class="about-game">
+            <h2>About the Game</h2>
+            <p><strong>GALA SA PILIPINAS</strong> is an adventure game designed to preserve and promote Filipino culture. The game allows players to explore various provinces of the Philippines while overcoming challenges like the traditional Filipino Jeepney, all while learning about the nation's rich culture, history, and landmarks.</p>
+        </div>
+
+        <!-- Game Features Section -->
+        <div class="game-features">
+            <h2>Game Features:</h2>
+            <ul>
+                <li>Progressive storytelling through different locations (Mt. Taal, Palawan, and Chocolate hills.)</li>
+                <li>Overcome the challenge of the jeepney, a beloved but sometimes troublesome traditional Filipino mode of transport.</li>
+                <li>Power-ups that enhance gameplay (e.g., Balut power-up allows flying ability)</li>
+                <li>Health bar system and scoring system</li>
+            </ul>
+        </div>
+
+        <!-- Character Description Section -->
+        <div class="character-description">
+            <h2>About the Character:</h2>
+            <p>Angel is an adventurous young woman with a deep curiosity about the Philippines. She wants to travel the archipelago, seeking to experience its vibrant culture and explore its diverse regions. However, her journey isn't without obstacles. As she ventures through province, she encounters the traditional jeepney, a colorful and unique form of transportation that often blocks her path. The jeepney represents both the charm and challenge of Filipino culture. Along the way, she must navigate these challenges and solve problems to continue her adventure.</p>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions -->
+    <div class="terms">
+        <p>By playing this game, you agree to our <a href="terms.html">Terms and Conditions</a>.</p>
+    </div>
+   
+</body>
+</html>

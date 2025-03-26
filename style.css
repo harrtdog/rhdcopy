@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Knewave&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: url('/home.jpg') no-repeat center center fixed; /* Add image URL */
+  background-size: cover; /* Ensure the image covers the whole screen */
+  color: #e6e6e6;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #000000;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+  color: #00ff55;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Active Link */
+nav a:active {
+  color: #0ada03;
+}
+
+/* Main Content */
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+  margin-top: 80px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #1eff00, #00ff4c); /* Gradient from blue to light green */
+    -webkit-background-clip: text; /* Ensures the gradient is applied to the text */
+    color: transparent; /* Make text color transparent so gradient shows */
+    
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: greenyellow;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to make the text stand out */
+  }
+  
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-buttons a {
+  padding: 25px 25px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.cta-buttons a:hover {
+  background-color: #27b80b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000;
+  color: white;
+  margin-top: 40px;
+}
+/* Team Name */
