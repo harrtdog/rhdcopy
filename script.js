@@ -147,7 +147,7 @@ function updateHeart() {
 
 let balut = {
   x: canvas.width + 300,  // Start closer to the right edge of the canvas
-  y: groundY - 100,
+  y: groundY - 50,
   width: 30,
   height: 30,
   active: false,
