@@ -147,7 +147,7 @@ function updateHeart() {
 
 let balut = {
   x: canvas.width + 300,  // Start closer to the right edge of the canvas
-  y: groundY - 160,
+  y: groundY - 40,
   width: 30,
   height: 30,
   active: false,
@@ -161,7 +161,7 @@ function createBalut() {
   // Only create a new balut if it's not currently active
   if (!balut.active) {
       balut.x = canvas.width + 500;  // Position balut to the right side of the screen
-      balut.y = groundY - 160;       // Ensure it's on the ground
+      balut.y = groundY - 40;       // Ensure it's on the ground
       balut.active = true;           // Mark balut as active
   }
 
